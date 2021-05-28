@@ -71,15 +71,44 @@ public class Main extends javax.swing.JFrame {
         back2 = new javax.swing.JLabel();
         crear_preparador = new javax.swing.JDialog();
         jLabel17 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
+        jSpinner11 = new javax.swing.JSpinner();
         jLabel21 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
+        jSpinner12 = new javax.swing.JSpinner();
         jLabel23 = new javax.swing.JLabel();
+        jTextField11 = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jToggleButton7 = new javax.swing.JToggleButton();
         back3 = new javax.swing.JLabel();
         crear_psicologos = new javax.swing.JDialog();
+        jLabel25 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        jTextField14 = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        jSpinner13 = new javax.swing.JSpinner();
+        jLabel29 = new javax.swing.JLabel();
+        jTextField16 = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        jSpinner14 = new javax.swing.JSpinner();
+        jLabel33 = new javax.swing.JLabel();
+        jSpinner15 = new javax.swing.JSpinner();
+        jToggleButton8 = new javax.swing.JToggleButton();
+        back4 = new javax.swing.JLabel();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
         jToggleButton3 = new javax.swing.JToggleButton();
@@ -152,6 +181,11 @@ public class Main extends javax.swing.JFrame {
         jToggleButton5.setBackground(new java.awt.Color(255, 255, 0));
         jToggleButton5.setForeground(new java.awt.Color(0, 0, 0));
         jToggleButton5.setText("Agregar");
+        jToggleButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton5MouseClicked(evt);
+            }
+        });
         crear_jugador.getContentPane().add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, -1, -1));
 
         back.setBackground(new java.awt.Color(255, 0, 0));
@@ -202,6 +236,11 @@ public class Main extends javax.swing.JFrame {
         jToggleButton6.setBackground(new java.awt.Color(255, 255, 0));
         jToggleButton6.setForeground(new java.awt.Color(0, 0, 0));
         jToggleButton6.setText("Agregar");
+        jToggleButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton6MouseClicked(evt);
+            }
+        });
         crear_entrenador.getContentPane().add(jToggleButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
 
         back2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
@@ -213,47 +252,150 @@ public class Main extends javax.swing.JFrame {
         jLabel17.setText("Nombre:");
         crear_preparador.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
+        jTextField7.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
+        crear_preparador.getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 180, -1));
+
         jLabel18.setForeground(new java.awt.Color(255, 255, 0));
         jLabel18.setText("Apellido:");
         crear_preparador.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jTextField8.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
+        crear_preparador.getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 180, -1));
 
         jLabel19.setForeground(new java.awt.Color(255, 255, 0));
         jLabel19.setText("Nacionalidad:");
         crear_preparador.getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
+        jTextField9.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
+        crear_preparador.getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 150, -1));
+
         jLabel20.setForeground(new java.awt.Color(255, 255, 0));
         jLabel20.setText("Edad:");
         crear_preparador.getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        crear_preparador.getContentPane().add(jSpinner11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
 
         jLabel21.setForeground(new java.awt.Color(255, 255, 0));
         jLabel21.setText("ID:");
         crear_preparador.getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
+        jTextField10.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField10.setForeground(new java.awt.Color(0, 0, 0));
+        crear_preparador.getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 200, -1));
+
         jLabel22.setForeground(new java.awt.Color(255, 255, 0));
         jLabel22.setText("Copas ganadas con el club:");
         crear_preparador.getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        crear_preparador.getContentPane().add(jSpinner12, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, -1, -1));
 
         jLabel23.setForeground(new java.awt.Color(255, 255, 0));
         jLabel23.setText("Especialidad:");
         crear_preparador.getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
 
+        jTextField11.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField11.setForeground(new java.awt.Color(0, 0, 0));
+        crear_preparador.getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 140, -1));
+
         jLabel24.setForeground(new java.awt.Color(255, 255, 0));
         jLabel24.setText("Titulo:");
         crear_preparador.getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
 
+        jTextField12.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField12.setForeground(new java.awt.Color(0, 0, 0));
+        crear_preparador.getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 180, -1));
+
+        jToggleButton7.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton7.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton7.setText("Agregar");
+        jToggleButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton7MouseClicked(evt);
+            }
+        });
+        crear_preparador.getContentPane().add(jToggleButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 100, -1));
+
         back3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
         crear_preparador.getContentPane().add(back3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 430));
 
-        javax.swing.GroupLayout crear_psicologosLayout = new javax.swing.GroupLayout(crear_psicologos.getContentPane());
-        crear_psicologos.getContentPane().setLayout(crear_psicologosLayout);
-        crear_psicologosLayout.setHorizontalGroup(
-            crear_psicologosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        crear_psicologosLayout.setVerticalGroup(
-            crear_psicologosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        crear_psicologos.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel25.setText("Nombre:");
+        crear_psicologos.getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, 20));
+
+        jTextField13.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField13.setForeground(new java.awt.Color(0, 0, 0));
+        crear_psicologos.getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 130, 20));
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel26.setText("Apellido:");
+        crear_psicologos.getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+
+        jTextField14.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField14.setForeground(new java.awt.Color(0, 0, 0));
+        crear_psicologos.getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 130, 20));
+
+        jLabel27.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel27.setText("Nacionalidad:");
+        crear_psicologos.getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+
+        jTextField15.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField15.setForeground(new java.awt.Color(0, 0, 0));
+        crear_psicologos.getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 140, 20));
+
+        jLabel28.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel28.setText("Edad:");
+        crear_psicologos.getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+        crear_psicologos.getContentPane().add(jSpinner13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
+
+        jLabel29.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel29.setText("Titulo:");
+        crear_psicologos.getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+
+        jTextField16.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField16.setForeground(new java.awt.Color(0, 0, 0));
+        crear_psicologos.getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 170, -1));
+
+        jLabel30.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel30.setText("ID:");
+        crear_psicologos.getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+
+        jTextField17.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField17.setForeground(new java.awt.Color(0, 0, 0));
+        crear_psicologos.getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 170, -1));
+
+        jLabel31.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel31.setText("Especialidad:");
+        crear_psicologos.getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+
+        jTextField18.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField18.setForeground(new java.awt.Color(0, 0, 0));
+        crear_psicologos.getContentPane().add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 150, -1));
+
+        jLabel32.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel32.setText("Informes:");
+        crear_psicologos.getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+        crear_psicologos.getContentPane().add(jSpinner14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, -1));
+
+        jLabel33.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel33.setText("Jugadores atendidos");
+        crear_psicologos.getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+        crear_psicologos.getContentPane().add(jSpinner15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
+
+        jToggleButton8.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton8.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton8.setText("Agregar");
+        jToggleButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton8MouseClicked(evt);
+            }
+        });
+        crear_psicologos.getContentPane().add(jToggleButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, -1, -1));
+
+        back4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
+        crear_psicologos.getContentPane().add(back4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 450));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Lab5");
@@ -305,7 +447,7 @@ public class Main extends javax.swing.JFrame {
         jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane1.setViewportView(jTree1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 130, 260));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 160, 260));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/superficie-textura-madera-color-blanco-gris_74190-8288.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 420));
@@ -345,6 +487,173 @@ public class Main extends javax.swing.JFrame {
         crear_psicologos.setVisible(true);
     }//GEN-LAST:event_jToggleButton4MouseClicked
 
+    private void jToggleButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseClicked
+        // TODO add your handling code here:
+        addPlayer();
+    }//GEN-LAST:event_jToggleButton5MouseClicked
+
+    private void jToggleButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton6MouseClicked
+        // TODO add your handling code here:
+        addTrainer();
+    }//GEN-LAST:event_jToggleButton6MouseClicked
+
+    private void jToggleButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton7MouseClicked
+        // TODO add your handling code here:
+        addPreparador();
+    }//GEN-LAST:event_jToggleButton7MouseClicked
+
+    private void jToggleButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton8MouseClicked
+        // TODO add your handling code here:
+        addPsicologo();
+    }//GEN-LAST:event_jToggleButton8MouseClicked
+
+    public void addPlayer () {
+        jugadores J = new jugadores();
+        String nombre = jTextField1.getText();
+        J.setNombre(nombre);
+        String apellido = jTextField2.getText();
+        J.setApellido(apellido);
+        String nacionalidad = jTextField3.getText();
+        J.setNacionalidad(nacionalidad);
+        int edad = (Integer)jSpinner1.getValue();
+        J.setEdad(edad);
+        int dorsal = (Integer)jSpinner2.getValue();
+        J.setNumero(dorsal);
+        int partidos_jugados = (Integer)jSpinner3.getValue();
+        J.setP_jugados(partidos_jugados);
+        int c_ganadas = (Integer)jSpinner4.getValue();
+        J.setC_ganadas(c_ganadas);
+        int t_amarillas = (Integer)jSpinner5.getValue();
+        J.setAmarillas(t_amarillas);
+        int t_rojas = (Integer)jSpinner6.getValue();
+        J.setRojas(t_rojas);
+        int contrato = (Integer)jSpinner7.getValue();
+        J.setContrato(contrato);
+        DefaultTreeModel modelo = (DefaultTreeModel)jTree1.getModel();
+        DefaultMutableTreeNode raiz = (DefaultMutableTreeNode)modelo.getRoot();
+        int centinela = -1;
+        for (int i = 0; i < raiz.getChildCount(); i++) {
+            if (raiz.getChildAt(i).toString().equals("Jugadores")){
+                DefaultMutableTreeNode p = new DefaultMutableTreeNode(J);
+                ((DefaultMutableTreeNode)raiz.getChildAt(i)).add(p);
+                centinela = 1;
+            }
+        }
+        if (centinela==-1){
+            DefaultMutableTreeNode n = new DefaultMutableTreeNode("Jugadores");
+            DefaultMutableTreeNode p = new DefaultMutableTreeNode(J);
+            n.add(p);
+            raiz.add(n);
+        }
+        modelo.reload();
+    }
+    
+    public void addTrainer () {
+        entrenadores E = new entrenadores();
+        String nombre = jTextField4.getText();
+        E.setNombre(nombre);
+        String apellido = jTextField5.getText();
+        E.setApellido(apellido);
+        String nacionalidad = jTextField6.getText();
+        E.setNacionalidad(nacionalidad);
+        int edad = (Integer)jSpinner8.getValue();
+        E.setEdad(edad);
+        int contrato = (Integer)jSpinner9.getValue();
+        E.setContrato(contrato);
+        int c_ganadas = (Integer)jSpinner10.getValue();
+        E.setC_ganadas(c_ganadas);
+        DefaultTreeModel modelo = (DefaultTreeModel)jTree1.getModel();
+        DefaultMutableTreeNode raiz = (DefaultMutableTreeNode)modelo.getRoot();
+        int centinela = -1;
+        for (int i = 0; i < raiz.getChildCount(); i++) {
+            if (raiz.getChildAt(i).toString().equals("Entrenadores")){
+                DefaultMutableTreeNode p = new DefaultMutableTreeNode(E);
+                ((DefaultMutableTreeNode)raiz.getChildAt(i)).add(p);
+                centinela = 1;
+            }
+        }
+        if (centinela==-1){
+            DefaultMutableTreeNode n = new DefaultMutableTreeNode("Entrenadores");
+            DefaultMutableTreeNode p = new DefaultMutableTreeNode(E);
+            n.add(p);
+            raiz.add(n);
+        }
+        modelo.reload();
+    }
+    
+    public void addPreparador(){
+        preparadores P = new preparadores();
+        String nombre = jTextField7.getText();
+        P.setNombre(nombre);
+        String apellido = jTextField8.getText();
+        P.setApellido(apellido);
+        String nacionalidad = jTextField9.getText();
+        P.setNacionalidad(nacionalidad);
+        int edad = (Integer)jSpinner11.getValue();
+        P.setEdad(edad);
+        String ID = jTextField10.getText();
+        P.setID(ID);
+        int c_ganadas = (Integer)jSpinner12.getValue();
+        P.setC_ganadas(c_ganadas);
+        String especialidad = jTextField11.getText();
+        P.setEspecialidad(especialidad);
+        String titulo = jTextField12.getText();
+        P.setN_titulo(titulo);
+        DefaultTreeModel modelo = (DefaultTreeModel)jTree1.getModel();
+        DefaultMutableTreeNode raiz = (DefaultMutableTreeNode)modelo.getRoot();
+        int centinela = -1;
+        for (int i = 0; i < raiz.getChildCount(); i++) {
+            if (raiz.getChildAt(i).toString().equals("Preparadores")){
+                DefaultMutableTreeNode p = new DefaultMutableTreeNode(P);
+                ((DefaultMutableTreeNode)raiz.getChildAt(i)).add(p);
+                centinela = 1;
+            }
+        }
+        if (centinela==-1){
+            DefaultMutableTreeNode n = new DefaultMutableTreeNode("Preparadores");
+            DefaultMutableTreeNode p = new DefaultMutableTreeNode(P);
+            n.add(p);
+            raiz.add(n);
+        }
+        modelo.reload();
+    }
+    
+    public void addPsicologo () {
+        psicologos P = new psicologos();
+        String nombre = jTextField13.getText();
+        P.setNombre(nombre);
+        String apellido = jTextField14.getText();
+        P.setApellido(apellido);
+        String nacionalidad = jTextField15.getText();
+        P.setNacionalidad(nacionalidad);
+        int edad = (Integer)jSpinner13.getValue();
+        P.setEdad(edad);
+        String titulo = jTextField16.getText();
+        P.setTitulo(titulo);
+        String ID = jTextField17.getText();
+        P.setID(ID);
+        int informes = (Integer)jSpinner14.getValue();
+        P.setInformes(informes);
+        int atendidos = (Integer)jSpinner15.getValue();
+        P.setJ_atendidos(atendidos);
+        DefaultTreeModel modelo = (DefaultTreeModel)jTree1.getModel();
+        DefaultMutableTreeNode raiz = (DefaultMutableTreeNode)modelo.getRoot();
+        int centinela = -1;
+        for (int i = 0; i < raiz.getChildCount(); i++) {
+            if (raiz.getChildAt(i).toString().equals("Psicologos")){
+                DefaultMutableTreeNode p = new DefaultMutableTreeNode(P);
+                ((DefaultMutableTreeNode)raiz.getChildAt(i)).add(p);
+                centinela = 1;
+            }
+        }
+        if (centinela==-1){
+            DefaultMutableTreeNode n = new DefaultMutableTreeNode("Psicologos");
+            DefaultMutableTreeNode p = new DefaultMutableTreeNode(P);
+            n.add(p);
+            raiz.add(n);
+        }
+        modelo.reload();
+    }
     /**
      * @param args the command line arguments
      */
@@ -385,6 +694,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel back;
     private javax.swing.JLabel back2;
     private javax.swing.JLabel back3;
+    private javax.swing.JLabel back4;
     private javax.swing.JDialog crear_entrenador;
     private javax.swing.JDialog crear_jugador;
     private javax.swing.JDialog crear_preparador;
@@ -406,7 +716,16 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -416,6 +735,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner10;
+    private javax.swing.JSpinner jSpinner11;
+    private javax.swing.JSpinner jSpinner12;
+    private javax.swing.JSpinner jSpinner13;
+    private javax.swing.JSpinner jSpinner14;
+    private javax.swing.JSpinner jSpinner15;
     private javax.swing.JSpinner jSpinner2;
     private javax.swing.JSpinner jSpinner3;
     private javax.swing.JSpinner jSpinner4;
@@ -425,17 +749,31 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton3;
     private javax.swing.JToggleButton jToggleButton4;
     private javax.swing.JToggleButton jToggleButton5;
     private javax.swing.JToggleButton jToggleButton6;
+    private javax.swing.JToggleButton jToggleButton7;
+    private javax.swing.JToggleButton jToggleButton8;
     private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }
