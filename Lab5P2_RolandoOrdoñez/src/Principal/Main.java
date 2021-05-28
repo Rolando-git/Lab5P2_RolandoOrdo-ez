@@ -32,8 +32,53 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         crear_jugador = new javax.swing.JDialog();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jLabel5 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
+        jLabel6 = new javax.swing.JLabel();
+        jSpinner3 = new javax.swing.JSpinner();
+        jLabel7 = new javax.swing.JLabel();
+        jSpinner4 = new javax.swing.JSpinner();
+        jLabel8 = new javax.swing.JLabel();
+        jSpinner5 = new javax.swing.JSpinner();
+        jLabel9 = new javax.swing.JLabel();
+        jSpinner6 = new javax.swing.JSpinner();
+        jLabel10 = new javax.swing.JLabel();
+        jSpinner7 = new javax.swing.JSpinner();
+        jToggleButton5 = new javax.swing.JToggleButton();
+        back = new javax.swing.JLabel();
         crear_entrenador = new javax.swing.JDialog();
+        jLabel11 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jSpinner8 = new javax.swing.JSpinner();
+        jLabel15 = new javax.swing.JLabel();
+        jSpinner9 = new javax.swing.JSpinner();
+        jLabel16 = new javax.swing.JLabel();
+        jSpinner10 = new javax.swing.JSpinner();
+        jToggleButton6 = new javax.swing.JToggleButton();
+        back2 = new javax.swing.JLabel();
         crear_preparador = new javax.swing.JDialog();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        back3 = new javax.swing.JLabel();
         crear_psicologos = new javax.swing.JDialog();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
@@ -43,38 +88,161 @@ public class Main extends javax.swing.JFrame {
         jTree1 = new javax.swing.JTree();
         Fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout crear_jugadorLayout = new javax.swing.GroupLayout(crear_jugador.getContentPane());
-        crear_jugador.getContentPane().setLayout(crear_jugadorLayout);
-        crear_jugadorLayout.setHorizontalGroup(
-            crear_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        crear_jugadorLayout.setVerticalGroup(
-            crear_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        crear_jugador.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout crear_entrenadorLayout = new javax.swing.GroupLayout(crear_entrenador.getContentPane());
-        crear_entrenador.getContentPane().setLayout(crear_entrenadorLayout);
-        crear_entrenadorLayout.setHorizontalGroup(
-            crear_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        crear_entrenadorLayout.setVerticalGroup(
-            crear_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel1.setText("Nombre:");
+        crear_jugador.getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 50, 20));
 
-        javax.swing.GroupLayout crear_preparadorLayout = new javax.swing.GroupLayout(crear_preparador.getContentPane());
-        crear_preparador.getContentPane().setLayout(crear_preparadorLayout);
-        crear_preparadorLayout.setHorizontalGroup(
-            crear_preparadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        crear_preparadorLayout.setVerticalGroup(
-            crear_preparadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jTextField1.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
+        crear_jugador.getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 230, 20));
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel2.setText("Apellido:");
+        crear_jugador.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+
+        jTextField2.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        crear_jugador.getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 230, 20));
+
+        jLabel3.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel3.setText("Nacionalidad:");
+        crear_jugador.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+
+        jTextField3.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+        crear_jugador.getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 220, 20));
+
+        jLabel4.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel4.setText("Edad:");
+        crear_jugador.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, 20));
+
+        jLabel5.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel5.setText("Dorsal:");
+        crear_jugador.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, 20));
+
+        jLabel6.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel6.setText("partidos jugados:");
+        crear_jugador.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, 20));
+
+        jLabel7.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel7.setText("copas ganadas con el club:");
+        crear_jugador.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, -1, 20));
+
+        jLabel8.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel8.setText("Tarjetas amarillas:");
+        crear_jugador.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, 20));
+
+        jLabel9.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel9.setText("Tarjetas rojas:");
+        crear_jugador.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, -1, 20));
+
+        jLabel10.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel10.setText("Años de contrato:");
+        crear_jugador.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+        crear_jugador.getContentPane().add(jSpinner7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, -1, 20));
+
+        jToggleButton5.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton5.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton5.setText("Agregar");
+        crear_jugador.getContentPane().add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, -1, -1));
+
+        back.setBackground(new java.awt.Color(255, 0, 0));
+        back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
+        crear_jugador.getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 380));
+
+        crear_entrenador.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel11.setText("Nombre:");
+        crear_entrenador.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jTextField4.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
+        crear_entrenador.getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 170, -1));
+
+        jLabel12.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel12.setText("Apellido:");
+        crear_entrenador.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jTextField5.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        crear_entrenador.getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 170, -1));
+
+        jLabel13.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel13.setText("Nacionalidad:");
+        crear_entrenador.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jTextField6.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
+        crear_entrenador.getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 150, -1));
+
+        jLabel14.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel14.setText("Edad:");
+        crear_entrenador.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        crear_entrenador.getContentPane().add(jSpinner8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
+
+        jLabel15.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel15.setText("Años de contrato:");
+        crear_entrenador.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+        crear_entrenador.getContentPane().add(jSpinner9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
+
+        jLabel16.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel16.setText("copas ganadas con el club");
+        crear_entrenador.getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, -1));
+        crear_entrenador.getContentPane().add(jSpinner10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, -1, -1));
+
+        jToggleButton6.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton6.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton6.setText("Agregar");
+        crear_entrenador.getContentPane().add(jToggleButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
+
+        back2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
+        crear_entrenador.getContentPane().add(back2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 410));
+
+        crear_preparador.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel17.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel17.setText("Nombre:");
+        crear_preparador.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel18.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel18.setText("Apellido:");
+        crear_preparador.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel19.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel19.setText("Nacionalidad:");
+        crear_preparador.getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel20.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel20.setText("Edad:");
+        crear_preparador.getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel21.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel21.setText("ID:");
+        crear_preparador.getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        jLabel22.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel22.setText("Copas ganadas con el club:");
+        crear_preparador.getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+
+        jLabel23.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel23.setText("Especialidad:");
+        crear_preparador.getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+        jLabel24.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel24.setText("Titulo:");
+        crear_preparador.getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
+
+        back3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
+        crear_preparador.getContentPane().add(back3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 430));
 
         javax.swing.GroupLayout crear_psicologosLayout = new javax.swing.GroupLayout(crear_psicologos.getContentPane());
         crear_psicologos.getContentPane().setLayout(crear_psicologosLayout);
@@ -104,16 +272,31 @@ public class Main extends javax.swing.JFrame {
         jToggleButton2.setBackground(new java.awt.Color(0, 0, 255));
         jToggleButton2.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton2.setText("Entrenador");
+        jToggleButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton2MouseClicked(evt);
+            }
+        });
         getContentPane().add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
 
         jToggleButton3.setBackground(new java.awt.Color(0, 0, 255));
         jToggleButton3.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton3.setText("Preparador");
+        jToggleButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton3MouseClicked(evt);
+            }
+        });
         getContentPane().add(jToggleButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
         jToggleButton4.setBackground(new java.awt.Color(0, 0, 255));
         jToggleButton4.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton4.setText("Psicologo");
+        jToggleButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton4MouseClicked(evt);
+            }
+        });
         getContentPane().add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, -1, -1));
 
         jTree1.setBackground(new java.awt.Color(0, 0, 255));
@@ -137,6 +320,30 @@ public class Main extends javax.swing.JFrame {
         crear_jugador.setLocationRelativeTo(this);
         crear_jugador.setVisible(true);
     }//GEN-LAST:event_jToggleButton1MouseClicked
+
+    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
+        // TODO add your handling code here:
+        crear_entrenador.setModal(true);
+        crear_entrenador.pack();
+        crear_entrenador.setLocationRelativeTo(this);
+        crear_entrenador.setVisible(true);
+    }//GEN-LAST:event_jToggleButton2MouseClicked
+
+    private void jToggleButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseClicked
+        // TODO add your handling code here:
+        crear_preparador.setModal(true);
+        crear_preparador.pack();
+        crear_preparador.setLocationRelativeTo(this);
+        crear_preparador.setVisible(true);
+    }//GEN-LAST:event_jToggleButton3MouseClicked
+
+    private void jToggleButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseClicked
+        // TODO add your handling code here:
+        crear_psicologos.setModal(true);
+        crear_psicologos.pack();
+        crear_psicologos.setLocationRelativeTo(this);
+        crear_psicologos.setVisible(true);
+    }//GEN-LAST:event_jToggleButton4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -175,15 +382,60 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel back;
+    private javax.swing.JLabel back2;
+    private javax.swing.JLabel back3;
     private javax.swing.JDialog crear_entrenador;
     private javax.swing.JDialog crear_jugador;
     private javax.swing.JDialog crear_preparador;
     private javax.swing.JDialog crear_psicologos;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner10;
+    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner4;
+    private javax.swing.JSpinner jSpinner5;
+    private javax.swing.JSpinner jSpinner6;
+    private javax.swing.JSpinner jSpinner7;
+    private javax.swing.JSpinner jSpinner8;
+    private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton3;
     private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JToggleButton jToggleButton5;
+    private javax.swing.JToggleButton jToggleButton6;
     private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }
