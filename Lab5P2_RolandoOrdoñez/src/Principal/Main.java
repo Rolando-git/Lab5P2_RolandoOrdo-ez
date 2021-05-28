@@ -5,6 +5,9 @@
  */
 package Principal;
 
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+
 /**
  *
  * @author Rolando
@@ -28,21 +31,112 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        crear_jugador = new javax.swing.JDialog();
+        crear_entrenador = new javax.swing.JDialog();
+        crear_preparador = new javax.swing.JDialog();
+        crear_psicologos = new javax.swing.JDialog();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jToggleButton3 = new javax.swing.JToggleButton();
+        jToggleButton4 = new javax.swing.JToggleButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
+        Fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout crear_jugadorLayout = new javax.swing.GroupLayout(crear_jugador.getContentPane());
+        crear_jugador.getContentPane().setLayout(crear_jugadorLayout);
+        crear_jugadorLayout.setHorizontalGroup(
+            crear_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 400, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        crear_jugadorLayout.setVerticalGroup(
+            crear_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout crear_entrenadorLayout = new javax.swing.GroupLayout(crear_entrenador.getContentPane());
+        crear_entrenador.getContentPane().setLayout(crear_entrenadorLayout);
+        crear_entrenadorLayout.setHorizontalGroup(
+            crear_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        crear_entrenadorLayout.setVerticalGroup(
+            crear_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout crear_preparadorLayout = new javax.swing.GroupLayout(crear_preparador.getContentPane());
+        crear_preparador.getContentPane().setLayout(crear_preparadorLayout);
+        crear_preparadorLayout.setHorizontalGroup(
+            crear_preparadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        crear_preparadorLayout.setVerticalGroup(
+            crear_preparadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout crear_psicologosLayout = new javax.swing.GroupLayout(crear_psicologos.getContentPane());
+        crear_psicologos.getContentPane().setLayout(crear_psicologosLayout);
+        crear_psicologosLayout.setHorizontalGroup(
+            crear_psicologosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        crear_psicologosLayout.setVerticalGroup(
+            crear_psicologosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Lab5");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jToggleButton1.setBackground(new java.awt.Color(0, 0, 255));
+        jToggleButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton1.setText("Jugador");
+        jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+
+        jToggleButton2.setBackground(new java.awt.Color(0, 0, 255));
+        jToggleButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton2.setText("Entrenador");
+        getContentPane().add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+
+        jToggleButton3.setBackground(new java.awt.Color(0, 0, 255));
+        jToggleButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton3.setText("Preparador");
+        getContentPane().add(jToggleButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
+
+        jToggleButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jToggleButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton4.setText("Psicologo");
+        getContentPane().add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, -1, -1));
+
+        jTree1.setBackground(new java.awt.Color(0, 0, 255));
+        jTree1.setForeground(new java.awt.Color(255, 255, 255));
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Club");
+        jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jScrollPane1.setViewportView(jTree1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 130, 260));
+
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/superficie-textura-madera-color-blanco-gris_74190-8288.jpg"))); // NOI18N
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 420));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
+        // TODO add your handling code here:
+        crear_jugador.setModal(true);
+        crear_jugador.pack();
+        crear_jugador.setLocationRelativeTo(this);
+        crear_jugador.setVisible(true);
+    }//GEN-LAST:event_jToggleButton1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -80,5 +174,16 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Fondo;
+    private javax.swing.JDialog crear_entrenador;
+    private javax.swing.JDialog crear_jugador;
+    private javax.swing.JDialog crear_preparador;
+    private javax.swing.JDialog crear_psicologos;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
+    private javax.swing.JToggleButton jToggleButton3;
+    private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }
