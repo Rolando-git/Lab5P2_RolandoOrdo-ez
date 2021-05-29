@@ -102,4 +102,7 @@ public class psicologos {
         return nombre;
     }
 
+    public String cadena() {
+        return "psicologos{" + "nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", titulo=" + titulo + ", ID=" + ID + ", especialidad=" + especialidad + ", informes=" + informes + ", j_atendidos=" + j_atendidos + '}';
+    }
 }

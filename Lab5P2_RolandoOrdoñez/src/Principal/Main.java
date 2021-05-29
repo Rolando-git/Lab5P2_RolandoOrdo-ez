@@ -5,6 +5,7 @@
  */
 package Principal;
 
+import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
@@ -109,6 +110,9 @@ public class Main extends javax.swing.JFrame {
         jSpinner15 = new javax.swing.JSpinner();
         jToggleButton8 = new javax.swing.JToggleButton();
         back4 = new javax.swing.JLabel();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
         jToggleButton3 = new javax.swing.JToggleButton();
@@ -124,6 +128,7 @@ public class Main extends javax.swing.JFrame {
         crear_jugador.getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 50, 20));
 
         jTextField1.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField1.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         crear_jugador.getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 230, 20));
 
@@ -132,6 +137,7 @@ public class Main extends javax.swing.JFrame {
         crear_jugador.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
         jTextField2.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField2.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         crear_jugador.getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 230, 20));
 
@@ -140,43 +146,58 @@ public class Main extends javax.swing.JFrame {
         crear_jugador.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
 
         jTextField3.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField3.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(0, 0, 0));
         crear_jugador.getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 220, 20));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 0));
         jLabel4.setText("Edad:");
         crear_jugador.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, 20));
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 60, 30));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 0));
         jLabel5.setText("Dorsal:");
         crear_jugador.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, 20));
+
+        jSpinner2.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 50, 30));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 0));
         jLabel6.setText("partidos jugados:");
         crear_jugador.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, 20));
+
+        jSpinner3.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, 30));
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 0));
         jLabel7.setText("copas ganadas con el club:");
         crear_jugador.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, -1, 20));
+
+        jSpinner4.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, -1, 30));
 
         jLabel8.setForeground(new java.awt.Color(255, 255, 0));
         jLabel8.setText("Tarjetas amarillas:");
         crear_jugador.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, 20));
+
+        jSpinner5.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, 30));
 
         jLabel9.setForeground(new java.awt.Color(255, 255, 0));
         jLabel9.setText("Tarjetas rojas:");
         crear_jugador.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, -1, 20));
+
+        jSpinner6.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 274, -1, -1));
 
         jLabel10.setForeground(new java.awt.Color(255, 255, 0));
         jLabel10.setText("Años de contrato:");
         crear_jugador.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
-        crear_jugador.getContentPane().add(jSpinner7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, -1, 20));
+
+        jSpinner7.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_jugador.getContentPane().add(jSpinner7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, -1, 30));
 
         jToggleButton5.setBackground(new java.awt.Color(255, 255, 0));
         jToggleButton5.setForeground(new java.awt.Color(0, 0, 0));
@@ -199,6 +220,7 @@ public class Main extends javax.swing.JFrame {
         crear_entrenador.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         jTextField4.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField4.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(0, 0, 0));
         crear_entrenador.getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 170, -1));
 
@@ -207,6 +229,7 @@ public class Main extends javax.swing.JFrame {
         crear_entrenador.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         jTextField5.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField5.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(0, 0, 0));
         crear_entrenador.getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 170, -1));
 
@@ -215,22 +238,29 @@ public class Main extends javax.swing.JFrame {
         crear_entrenador.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
         jTextField6.setBackground(new java.awt.Color(255, 255, 0));
+        jTextField6.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(0, 0, 0));
         crear_entrenador.getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 150, -1));
 
         jLabel14.setForeground(new java.awt.Color(255, 255, 0));
         jLabel14.setText("Edad:");
         crear_entrenador.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jSpinner8.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
         crear_entrenador.getContentPane().add(jSpinner8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
 
         jLabel15.setForeground(new java.awt.Color(255, 255, 0));
         jLabel15.setText("Años de contrato:");
         crear_entrenador.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        jSpinner9.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
         crear_entrenador.getContentPane().add(jSpinner9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
 
         jLabel16.setForeground(new java.awt.Color(255, 255, 0));
         jLabel16.setText("copas ganadas con el club");
         crear_entrenador.getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, -1));
+
+        jSpinner10.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
         crear_entrenador.getContentPane().add(jSpinner10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, -1, -1));
 
         jToggleButton6.setBackground(new java.awt.Color(255, 255, 0));
@@ -275,7 +305,9 @@ public class Main extends javax.swing.JFrame {
         jLabel20.setForeground(new java.awt.Color(255, 255, 0));
         jLabel20.setText("Edad:");
         crear_preparador.getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
-        crear_preparador.getContentPane().add(jSpinner11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
+
+        jSpinner11.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_preparador.getContentPane().add(jSpinner11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 40, 30));
 
         jLabel21.setForeground(new java.awt.Color(255, 255, 0));
         jLabel21.setText("ID:");
@@ -288,7 +320,9 @@ public class Main extends javax.swing.JFrame {
         jLabel22.setForeground(new java.awt.Color(255, 255, 0));
         jLabel22.setText("Copas ganadas con el club:");
         crear_preparador.getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
-        crear_preparador.getContentPane().add(jSpinner12, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, -1, -1));
+
+        jSpinner12.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_preparador.getContentPane().add(jSpinner12, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 60, 30));
 
         jLabel23.setForeground(new java.awt.Color(255, 255, 0));
         jLabel23.setText("Especialidad:");
@@ -296,7 +330,7 @@ public class Main extends javax.swing.JFrame {
 
         jTextField11.setBackground(new java.awt.Color(255, 255, 0));
         jTextField11.setForeground(new java.awt.Color(0, 0, 0));
-        crear_preparador.getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 140, -1));
+        crear_preparador.getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 140, 30));
 
         jLabel24.setForeground(new java.awt.Color(255, 255, 0));
         jLabel24.setText("Titulo:");
@@ -304,7 +338,7 @@ public class Main extends javax.swing.JFrame {
 
         jTextField12.setBackground(new java.awt.Color(255, 255, 0));
         jTextField12.setForeground(new java.awt.Color(0, 0, 0));
-        crear_preparador.getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 180, -1));
+        crear_preparador.getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 180, 30));
 
         jToggleButton7.setBackground(new java.awt.Color(255, 255, 0));
         jToggleButton7.setForeground(new java.awt.Color(0, 0, 0));
@@ -327,7 +361,7 @@ public class Main extends javax.swing.JFrame {
 
         jTextField13.setBackground(new java.awt.Color(255, 255, 0));
         jTextField13.setForeground(new java.awt.Color(0, 0, 0));
-        crear_psicologos.getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 130, 20));
+        crear_psicologos.getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 150, -1));
 
         jLabel26.setForeground(new java.awt.Color(255, 255, 0));
         jLabel26.setText("Apellido:");
@@ -335,7 +369,7 @@ public class Main extends javax.swing.JFrame {
 
         jTextField14.setBackground(new java.awt.Color(255, 255, 0));
         jTextField14.setForeground(new java.awt.Color(0, 0, 0));
-        crear_psicologos.getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 130, 20));
+        crear_psicologos.getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 150, 30));
 
         jLabel27.setForeground(new java.awt.Color(255, 255, 0));
         jLabel27.setText("Nacionalidad:");
@@ -343,12 +377,14 @@ public class Main extends javax.swing.JFrame {
 
         jTextField15.setBackground(new java.awt.Color(255, 255, 0));
         jTextField15.setForeground(new java.awt.Color(0, 0, 0));
-        crear_psicologos.getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 140, 20));
+        crear_psicologos.getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 150, 30));
 
         jLabel28.setForeground(new java.awt.Color(255, 255, 0));
         jLabel28.setText("Edad:");
         crear_psicologos.getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
-        crear_psicologos.getContentPane().add(jSpinner13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
+
+        jSpinner13.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_psicologos.getContentPane().add(jSpinner13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 50, 30));
 
         jLabel29.setForeground(new java.awt.Color(255, 255, 0));
         jLabel29.setText("Titulo:");
@@ -356,7 +392,7 @@ public class Main extends javax.swing.JFrame {
 
         jTextField16.setBackground(new java.awt.Color(255, 255, 0));
         jTextField16.setForeground(new java.awt.Color(0, 0, 0));
-        crear_psicologos.getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 170, -1));
+        crear_psicologos.getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 180, 30));
 
         jLabel30.setForeground(new java.awt.Color(255, 255, 0));
         jLabel30.setText("ID:");
@@ -364,7 +400,7 @@ public class Main extends javax.swing.JFrame {
 
         jTextField17.setBackground(new java.awt.Color(255, 255, 0));
         jTextField17.setForeground(new java.awt.Color(0, 0, 0));
-        crear_psicologos.getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 170, -1));
+        crear_psicologos.getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 190, 30));
 
         jLabel31.setForeground(new java.awt.Color(255, 255, 0));
         jLabel31.setText("Especialidad:");
@@ -372,17 +408,21 @@ public class Main extends javax.swing.JFrame {
 
         jTextField18.setBackground(new java.awt.Color(255, 255, 0));
         jTextField18.setForeground(new java.awt.Color(0, 0, 0));
-        crear_psicologos.getContentPane().add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 150, -1));
+        crear_psicologos.getContentPane().add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 170, 30));
 
         jLabel32.setForeground(new java.awt.Color(255, 255, 0));
         jLabel32.setText("Informes:");
         crear_psicologos.getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
-        crear_psicologos.getContentPane().add(jSpinner14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, -1));
+
+        jSpinner14.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_psicologos.getContentPane().add(jSpinner14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 50, 30));
 
         jLabel33.setForeground(new java.awt.Color(255, 255, 0));
         jLabel33.setText("Jugadores atendidos");
         crear_psicologos.getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
-        crear_psicologos.getContentPane().add(jSpinner15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
+
+        jSpinner15.setModel(new javax.swing.SpinnerNumberModel(1, 1, 99, 1));
+        crear_psicologos.getContentPane().add(jSpinner15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 50, 30));
 
         jToggleButton8.setBackground(new java.awt.Color(255, 255, 0));
         jToggleButton8.setForeground(new java.awt.Color(0, 0, 0));
@@ -396,6 +436,15 @@ public class Main extends javax.swing.JFrame {
 
         back4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/rojo.jpg"))); // NOI18N
         crear_psicologos.getContentPane().add(back4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 450));
+
+        jMenuItem1.setText("jMenuItem1");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+
+        jMenuItem2.setText("jMenuItem2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Lab5");
@@ -445,9 +494,14 @@ public class Main extends javax.swing.JFrame {
         jTree1.setForeground(new java.awt.Color(255, 255, 255));
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Club");
         jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jTree1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTree1MouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTree1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 160, 260));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 170, 260));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/superficie-textura-madera-color-blanco-gris_74190-8288.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 420));
@@ -506,6 +560,62 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         addPsicologo();
     }//GEN-LAST:event_jToggleButton8MouseClicked
+
+    private void jTree1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTree1MouseClicked
+        // TODO add your handling code here:
+        if (evt.isMetaDown()){
+            int row = jTree1.getClosestRowForLocation(evt.getX(), evt.getY());
+            jTree1.setSelectionRow(row);
+            Object v1 = jTree1.getSelectionPath().getLastPathComponent();
+            nodo_seleccionado=(DefaultMutableTreeNode) v1;
+            if (nodo_seleccionado.getUserObject() instanceof jugadores){
+                jugador_seleccionado = (jugadores)nodo_seleccionado.getUserObject();
+                jPopupMenu1.show(evt.getComponent(), evt.getX(), evt.getY());
+            }
+            else{
+                if (nodo_seleccionado.getUserObject() instanceof entrenadores){
+                    entrenador_seleccionado = (entrenadores)nodo_seleccionado.getUserObject();
+                    jPopupMenu1.show(evt.getComponent(), evt.getX(), evt.getY());
+                }
+                else{
+                    if (nodo_seleccionado.getUserObject() instanceof preparadores){
+                        preparador_seleccionado = (preparadores)nodo_seleccionado.getUserObject();
+                        jPopupMenu1.show(evt.getComponent(), evt.getX(), evt.getY());
+                    }
+                    else {
+                        if (nodo_seleccionado.getUserObject() instanceof psicologos){
+                            psicologo_seleccionado = (psicologos)nodo_seleccionado.getUserObject();
+                            jPopupMenu1.show(evt.getComponent(), evt.getX(), evt.getY());
+                        }
+                    }
+                }
+            }
+        }
+    }//GEN-LAST:event_jTree1MouseClicked
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        String s="";
+        if (nodo_seleccionado.getUserObject() instanceof jugadores){
+            s += ((jugadores)nodo_seleccionado.getUserObject()).cadena();
+        }
+        else {
+            if (nodo_seleccionado.getUserObject() instanceof entrenadores){
+                s += ((entrenadores)nodo_seleccionado.getUserObject()).cadena();
+            }
+            else {
+                if (nodo_seleccionado.getUserObject() instanceof preparadores){
+                    s += ((preparadores)nodo_seleccionado.getUserObject()).cadena();
+                }
+                else{
+                    if (nodo_seleccionado.getUserObject() instanceof psicologos){
+                        s += ((psicologos)nodo_seleccionado.getUserObject()).cadena();
+                    }
+                }
+            }
+        }
+        JOptionPane.showMessageDialog(this, s);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     public void addPlayer () {
         jugadores J = new jugadores();
@@ -689,6 +799,11 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
+    DefaultMutableTreeNode nodo_seleccionado;
+    jugadores jugador_seleccionado;
+    entrenadores entrenador_seleccionado;
+    psicologos psicologo_seleccionado;
+    preparadores preparador_seleccionado;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
     private javax.swing.JLabel back;
@@ -732,6 +847,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner10;

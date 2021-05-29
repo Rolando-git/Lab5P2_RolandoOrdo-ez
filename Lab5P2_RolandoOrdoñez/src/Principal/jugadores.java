@@ -110,4 +110,7 @@ public class jugadores {
         return nombre;
     }
 
+    public String cadena() {
+        return "jugadores{" + "nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", numero=" + numero + ", p_jugados=" + p_jugados + ", c_ganadas=" + c_ganadas + ", amarillas=" + amarillas + ", rojas=" + rojas + ", contrato=" + contrato + '}';
+    }
 }

@@ -73,4 +73,7 @@ public class entrenadores {
         return nombre;
     }
 
+    public String cadena() {
+        return "entrenadores{" + "nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", contrato=" + contrato + ", c_ganadas=" + c_ganadas + '}';
+    }
 }

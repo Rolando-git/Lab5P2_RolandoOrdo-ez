@@ -93,4 +93,7 @@ public class preparadores {
         return nombre;
     }
 
+    public String cadena() {
+        return "preparadores{" + "nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", ID=" + ID + ", c_ganadas=" + c_ganadas + ", especialidad=" + especialidad + ", n_titulo=" + n_titulo + '}';
+    }
 }
